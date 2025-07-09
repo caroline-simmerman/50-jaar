@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Caroline 50 Jaar - Feestelijke Uitnodiging</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   body {
     margin: 0;
     padding: 0;
     background: url('https://go-sparks.com/wp-content/uploads/Party.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #3b2f2f;
   }
 
   .container {
     max-width: 700px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
     padding: 30px 40px;
     text-align: center;
   }
 
   h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: #c71585;
     margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
     color: #3b2f2f;
+    line-height: 1.4;
   }
 
   .intro {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 20px 0;
     line-height: 1.6;
   }
@@ -51,18 +51,14 @@
   .location-time {
     max-width: 480px;
     margin: 30px auto 50px;
-    padding: 25px 30px;
-    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     border: 3px solid #DFBe6f;
-    box-shadow: 0 6px 18px rgba(223, 190, 111, 0.4);
-    color: #3b2f2f;
-    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(223, 190, 111, 0.3);
+    font-weight: 600;
     font-size: 1.15rem;
-    text-align: center;
-    letter-spacing: 0.8px;
     line-height: 1.6;
-    position: relative;
   }
 
   .location-time span {
@@ -70,20 +66,14 @@
     margin-bottom: 10px;
   }
 
-  .location-time::before {
-    content: "\1F4CD";
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 1.5rem;
+  .location-time a {
+    color: #c71585;
+    text-decoration: none;
+    font-weight: 600;
   }
 
-  .location-time::after {
-    content: "\23F0";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
+  .location-time a:hover {
+    text-decoration: underline;
   }
 
   .cadeautip {
@@ -127,15 +117,31 @@
     background: #a0116a;
   }
 
+  .calendar-link {
+    display: inline-block;
+    margin-top: 20px;
+    background: #DFBe6f;
+    color: #3b2f2f;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .calendar-link:hover {
+    background: #c71585;
+    color: white;
+  }
+
   .signature {
     margin-top: 40px;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   @media (max-width: 600px) {
     h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
     .intro, .location-time { font-size: 1rem; }
   }
 </style>
@@ -145,7 +151,9 @@
 <div class="container">
   <h1>🎈 HELP! Ik word 50! 🥳</h1>
 
-  <h2>Op 28 augustus tik ik de halve eeuw aan.<br>En hoe overleef je dat? Met bubbels natuurlijk! 🍾</h2>
+  <h2>Op 28 augustus tik ik de halve eeuw aan.<br>
+  En hoe overleef je dat?<br>
+  Met bubbels natuurlijk!</h2>
 
   <p class="intro">
     Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borrel.<br>
@@ -153,11 +161,13 @@
   </p>
 
   <div class="location-time">
-    <span><strong>Restaurant De Bosbaan</strong><br />Bosbaanweg 4, Amsterdam</span>
+    <span><strong>Restaurant De Bosbaan</strong><br>
+      <a href="https://www.google.com/maps/place/Bosbaanweg+4,+Amsterdam" target="_blank">Bosbaanweg 4, Amsterdam</a>
+    </span>
     <span><strong>Tijd:</strong> Borrel van 15:00 tot 18:00 uur</span>
   </div>
 
-  <p class="cadeautip">🎁 Cadeautip: een envelopje wordt zeer gewaardeerd</p>
+  <p class="cadeautip">Cadeautip ✉</p>
 
   <form class="rsvp-form" action="https://formspree.io/f/xzzglywk" method="POST">
     <label for="name">Je naam</label>
@@ -168,6 +178,8 @@
 
     <button type="submit">Verstuur RSVP</button>
   </form>
+
+  <a class="calendar-link" href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Caroline+50+jaar+borrel&dates=20250830T130000Z/20250830T160000Z&details=Caroline+viert+haar+50ste+verjaardag+bij+Restaurant+De+Bosbaan,+kom+je+ook?&location=Bosbaanweg+4,+Amsterdam" target="_blank">Voeg toe aan agenda</a>
 
   <div class="signature">
     Liefs,<br />Caroline
