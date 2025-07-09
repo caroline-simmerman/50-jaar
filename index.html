@@ -222,7 +222,6 @@
     <div class="time-box"><span id="days">0</span><small>Dagen</small></div>
     <div class="time-box"><span id="hours">0</span><small>Uren</small></div>
     <div class="time-box"><span id="minutes">0</span><small>Min</small></div>
-    <div class="time-box"><span id="seconds">0</span><small>Sec</small></div>
   </div>
 
   <div class="location-time">
@@ -266,16 +265,14 @@
     const dagen = Math.floor(afstand / (1000 * 60 * 60 * 24));
     const uren = Math.floor((afstand % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minuten = Math.floor((afstand % (1000 * 60 * 60)) / (1000 * 60));
-    const seconden = Math.floor((afstand % (1000 * 60)) / 1000);
 
     document.getElementById('days').textContent = dagen;
     document.getElementById('hours').textContent = uren;
     document.getElementById('minutes').textContent = minuten;
-    document.getElementById('seconds').textContent = seconden;
   }
 
   updateCountdown();
-  setInterval(updateCountdown, 1000);
+  setInterval(updateCountdown, 60000); // update elke minuut
 
   window.addEventListener('load', () => {
     document.body.classList.add('loaded');
