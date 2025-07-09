@@ -1,280 +1,178 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Uitnodiging 50ste Verjaardag Caroline Simmerman</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caroline 50 Jaar - Feestelijke Uitnodiging</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
   body {
-    margin: 0; 
-    padding: 30px 15px 60px;
-    background: linear-gradient(135deg, #fef9f3 0%, #fff7e6 100%);
+    margin: 0;
+    padding: 0;
+    background: url('https://go-sparks.com/wp-content/uploads/Party.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
     color: #3b2f2f;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    color: #c71585;
-    margin-bottom: 5px;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 4px rgba(199,21,133,0.3);
-  }
-  h2 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 1.9rem;
-    color: #DFBe6f;
-    margin: 0 0 30px;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 3px rgba(223,190,111,0.4);
-    text-transform: uppercase;
-  }
-  .subtitle {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #c71585;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-  }
-  main {
-    max-width: 800px;
-    width: 100%;
-    padding: 0 20px;
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 18px 0;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    white-space: pre-line;
-  }
-  .highlight {
-    color: #c71585;
-    font-weight: 700;
-    text-shadow: none; /* schaduwen uit */
-  }
-  .location {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #DFBe6f;
-    margin: 35px 0 15px;
-    letter-spacing: 1.5px;
-    text-align: center;
-  }
-  .gold-underline {
-    width: 140px;
-    height: 5px;
-    background: #DFBe6f;
-    margin: 25px auto 50px;
-    border-radius: 4px;
-    box-shadow: 0 0 12px #dfbe6fbb;
   }
 
-  /* RSVP Formulier */
-  form.rsvp-form {
-    max-width: 480px;
-    margin: 0 auto 60px;
-    text-align: left;
-    background: #fff0f8;
-    padding: 30px 35px;
-    border-radius: 24px;
-    border: 3px solid #c71585;
-    box-shadow: 0 8px 18px rgba(199, 21, 133, 0.25);
-    transition: box-shadow 0.3s ease;
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-align: center;
   }
-  form.rsvp-form:hover {
-    box-shadow: 0 14px 30px rgba(199, 21, 133, 0.5);
-  }
-  form.rsvp-form label {
-    font-weight: 700;
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
     color: #c71585;
-    font-size: 1.05rem;
-    display: block;
-    margin-bottom: 8px;
-    letter-spacing: 0.9px;
+    margin-bottom: 10px;
   }
-  form.rsvp-form input[type="text"],
-  form.rsvp-form input[type="number"] {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 22px;
-    border: 2px solid #DFBe6f;
-    border-radius: 14px;
-    font-size: 1rem;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #3b2f2f;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+
+  .highlight {
+    color: #c71585;
+    font-weight: 600;
+  }
+
+  .location-time {
+    max-width: 480px;
+    margin: 30px auto 50px;
+    padding: 25px 30px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    border: 3px solid #DFBe6f;
+    box-shadow: 0 6px 18px rgba(223, 190, 111, 0.4);
+    color: #3b2f2f;
     font-weight: 700;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.15rem;
+    text-align: center;
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+    position: relative;
   }
-  form.rsvp-form input[type="text"]:focus,
-  form.rsvp-form input[type="number"]:focus {
-    outline: none;
-    border-color: #c71585;
-    box-shadow: 0 0 12px #c71585cc;
-  }
-  form.rsvp-form button {
-    background: linear-gradient(45deg, #c71585, #a00d67);
-    color: white;
-    padding: 14px 36px;
-    border: none;
-    border-radius: 22px;
-    font-size: 1.25rem;
-    font-weight: 800;
-    cursor: pointer;
+
+  .location-time span {
     display: block;
-    margin: 0 auto;
-    box-shadow: 0 8px 20px rgba(199, 21, 133, 0.65);
-    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
   }
-  form.rsvp-form button:hover,
-  form.rsvp-form button:focus {
-    background: linear-gradient(45deg, #a00d67, #7a0848);
-    transform: scale(1.07);
-    box-shadow: 0 12px 36px rgba(199, 21, 133, 0.95);
-    outline: none;
+
+  .location-time::before {
+    content: "\1F4CD";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .location-time::after {
+    content: "\23F0";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+
+  .cadeautip {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #c71585;
+    font-weight: 600;
+  }
+
+  .rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .rsvp-form label {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .rsvp-form input {
+    padding: 10px;
+    border: 2px solid #DFBe6f;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .rsvp-form button {
+    background: #c71585;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .rsvp-form button:hover {
+    background: #a0116a;
   }
 
   .signature {
-    text-align: center;
-    font-style: italic;
-    font-weight: 700;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
-    color: #c71585;
-    letter-spacing: 1.2px;
-    margin-bottom: 30px;
   }
 
-  .footer {
-    max-width: 800px;
-    text-align: center;
-    font-size: 1rem;
-    color: #999;
-    font-style: italic;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 700px) {
-    body {
-      padding: 25px 15px 50px;
-    }
-    h1 {
-      font-size: 2.8rem;
-      letter-spacing: 2.5px;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
-    .subtitle {
-      font-size: 1rem;
-      margin-bottom: 30px;
-    }
-    p {
-      font-size: 0.9rem;
-    }
-    .location {
-      font-size: 1.1rem;
-    }
-    form.rsvp-form {
-      padding: 25px 20px;
-      max-width: 100%;
-    }
-    form.rsvp-form label {
-      font-size: 1rem;
-    }
-    form.rsvp-form input[type="text"],
-    form.rsvp-form input[type="number"] {
-      font-size: 0.95rem;
-      padding: 10px 12px;
-    }
-    form.rsvp-form button {
-      font-size: 1.1rem;
-      padding: 12px 28px;
-    }
-    .signature {
-      font-size: 1.1rem;
-      margin-bottom: 25px;
-    }
-    .footer {
-      font-size: 0.9rem;
-    }
+  @media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.5rem; }
+    .intro, .location-time { font-size: 1rem; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Caroline</h1>
-  <div class="gold-underline" aria-hidden="true"></div>
-  <h2>50 Jaar</h2>
-  <div class="subtitle" aria-label="Time to sparkle!">Time to Sparkle!</div>
-</header>
+<div class="container">
+  <h1>🎈 HELP! Ik word 50! 🥳</h1>
 
-<main>
-  <p>
-    🎈 HELP! Ik word 50! 🥳<br><br>
-    Op <span class="highlight">28 augustus</span> is het zover: ik tik de halve eeuw aan.<br>
-    Geen zorgen — ik voel me nog jong (tenminste tot ik een trap op moet).<br><br>
-    En hoe overleef je zoiets? Met bubbels natuurlijk! 🍾<br><br>
-    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borreltje.<br>
-    Kom langs, proost mee, lach om mijn rimpels en dans alsof het 1999 is (maar dan met rugklachten).<br><br>
-    Ben je erbij? 🎉
+  <h2>Op 28 augustus tik ik de halve eeuw aan.<br>En hoe overleef je dat? Met bubbels natuurlijk! 🍾</h2>
+
+  <p class="intro">
+    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borrel.<br>
+    Kom langs, proost mee, lach om mijn rimpels en dans alsof het 1999 is (maar dan met rugklachten).
   </p>
 
-  <p class="location" aria-label="Locatie en tijd van het feest">
-    Restaurant De Bosbaan<br />Bosbaanweg 4, Amsterdam
-  </p>
+  <div class="location-time">
+    <span><strong>Restaurant De Bosbaan</strong><br />Bosbaanweg 4, Amsterdam</span>
+    <span><strong>Tijd:</strong> Borrel van 15:00 tot 18:00 uur</span>
+  </div>
 
-  <p><span class="highlight">Borrel van 15:00 tot 18:00 uur</span></p>
+  <p class="cadeautip">🎁 Cadeautip: een envelopje wordt zeer gewaardeerd</p>
 
-  <p><strong>Cadeautip:</strong> een envelopje</p>
+  <form class="rsvp-form" action="https://formspree.io/f/xzzglywk" method="POST">
+    <label for="name">Je naam</label>
+    <input type="text" id="name" name="name" placeholder="Vul je naam in" required />
 
-  <form
-    class="rsvp-form"
-    action="https://formspree.io/f/xzzglywk"
-    method="POST"
-  >
-    <label for="name">Jouw naam</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Vul hier je naam in"
-      required
-      autocomplete="name"
-    />
+    <label for="guests">Met hoeveel personen kom je?</label>
+    <input type="number" id="guests" name="guests" placeholder="Aantal personen" min="1" max="20" required />
 
-    <label for="persons">Met hoeveel personen kom je?</label>
-    <input
-      type="number"
-      id="persons"
-      name="persons"
-      min="1"
-      max="10"
-      placeholder="Aantal personen"
-      required
-    />
-
-    <button type="submit">Verzenden</button>
+    <button type="submit">Verstuur RSVP</button>
   </form>
-</main>
 
-<div class="footer">
-  We kijken ernaar uit je te zien om samen herinneringen te maken! 🎉
+  <div class="signature">
+    Liefs,<br />Caroline
+  </div>
+
 </div>
 
 </body>
