@@ -65,7 +65,7 @@
   .highlight {
     color: #c71585;
     font-weight: 700;
-    text-shadow: 0 0 3px #c71585aa;
+    text-shadow: none; /* Schaduw verwijderd */
   }
   .location {
     font-weight: 700;
@@ -213,57 +213,4 @@
     }
   }
 </style>
-</head>
-<body>
-
-<header>
-  <h1>Caroline</h1>
-  <div class="gold-underline" aria-hidden="true"></div>
-  <h2>50 Jaar</h2>
-  <div class="subtitle" aria-label="Time to sparkle!">Time to Sparkle!</div>
-</header>
-
-<main>
-  <p>
-    🎈 HELP! Ik word 50! 🥳<br><br>
-    Op <span class="highlight">28 augustus</span> is het zover: ik tik de halve eeuw aan.<br>
-    Geen zorgen — ik voel me nog jong (tenminste tot ik een trap op moet).<br><br>
-    En hoe overleef je zoiets? Met bubbels natuurlijk! 🍾<br><br>
-    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borreltje.<br>
-    Kom langs, proost mee, lach om mijn rimpels en dans alsof het 1999 is (maar dan met rugklachten).<br><br>
-    Ben je erbij? 🎉
-  </p>
-
-  <p class="location" aria-label="Locatie en tijd van het feest">
-    Restaurant De Bosbaan<br />Bosbaanweg 4, Amsterdam
-  </p>
-
-  <p><span class="highlight">Borrel van 15:00 tot 18:00 uur</span></p>
-
-  <p><strong>Cadeautip:</strong> een envelopje</p>
-
-  <p>Laat even weten of je erbij bent en met hoeveel.</p>
-
-  <!-- RSVP Formulier -->
-  <form action="https://formspree.io/f/xzzglywk" method="POST" class="rsvp-form" novalidate aria-label="RSVP formulier">
-    <label for="name">Naam:</label>
-    <input type="text" id="name" name="Naam" placeholder="Jouw naam" required aria-required="true" autocomplete="name" />
-
-    <label for="guests">Met hoeveel personen kom je?</label>
-    <input type="number" id="guests" name="Aantal personen" placeholder="1" min="1" required aria-required="true" />
-
-    <button type="submit" aria-label="Verstuur RSVP">Verstuur RSVP</button>
-  </form>
-
-  <div class="signature" aria-label="Groet van Caroline">
-    Liefs,<br>Caroline
-  </div>
-
-</main>
-
-<footer class="footer">
-  We kijken ernaar uit je te zien om samen herinneringen te maken! 🎉
-</footer>
-
-</body>
-</html>
+</h
