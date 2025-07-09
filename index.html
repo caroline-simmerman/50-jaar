@@ -5,13 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Uitnodiging 50ste Verjaardag Caroline Simmerman</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap');
+  @font-face {
+    font-family: 'Sansation';
+    src: url('https://fonts.cdnfonts.com/s/15648/Sansation-Regular.woff') format('woff');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Sansation';
+    src: url('https://fonts.cdnfonts.com/s/15648/Sansation-Bold.woff') format('woff');
+    font-weight: 700;
+  }
 
   body {
     margin: 0;
     padding: 0;
     background: #fef9f3;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sansation', sans-serif;
     color: #3b2f2f;
   }
 
@@ -27,8 +36,8 @@
   }
 
   h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
+    font-weight: 700;
+    font-size: 3.8rem;
     color: #c71585;
     margin-bottom: 0;
   }
@@ -42,7 +51,7 @@
 
   .subtitle {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #DFBe6f;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -53,6 +62,7 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin: 20px 0;
+    font-weight: normal;
   }
 
   .highlight {
@@ -72,6 +82,7 @@
     font-size: 1rem;
     color: #999;
     font-style: italic;
+    font-weight: normal;
   }
 
   .gold-underline {
@@ -80,6 +91,15 @@
     background: #DFBe6f;
     margin: 10px auto 30px;
     border-radius: 2px;
+  }
+
+  a {
+    color: #c71585;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 480px) {
@@ -116,7 +136,7 @@
   <p>We starten om <span class="highlight">17:00 uur</span>.</p>
 
   <p>Laat je even weten of je erbij bent?<br />
-  Bel of app naar <span class="highlight">06-12345678</span> of mail naar <a href="mailto:caroline@example.com" style="color: #c71585;">caroline@example.com</a></p>
+  Bel of app naar <span class="highlight">06-12345678</span> of mail naar <a href="mailto:caroline@example.com">caroline@example.com</a></p>
 
   <div class="footer">
     We kijken er naar uit je te zien om samen herinneringen te maken! 🎉
