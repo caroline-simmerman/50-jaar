@@ -169,6 +169,11 @@
     margin-bottom: 20px;
   }
 
+  /* Verberg standaard het aantal personen veld */
+  #guests-container {
+    display: none;
+  }
+
   @media (max-width: 700px) {
     body {
       padding: 25px 15px 50px;
@@ -253,24 +258,10 @@
     <input type="text" id="name" name="Naam" placeholder="Jouw naam" required aria-required="true" autocomplete="name" />
 
     <label for="attending">Kom je?</label>
-    <select id="attending" name="Kom je?" required aria-required="true">
+    <select id="attending" name="Kom je?" required aria-required="true" onchange="toggleGuests()">
       <option value="" disabled selected>Kies een optie</option>
       <option value="Ja">Ja, ik kom gezellig!</option>
       <option value="Nee">Nee, helaas niet</option>
     </select>
 
-    <label for="guests">Met hoeveel personen kom je?</label>
-    <input type="number" id="guests" name="Aantal personen" min="1" max="10" placeholder="Vul aantal in" required aria-required="true" />
-
-    <button type="submit">Verzenden</button>
-  </form>
-</main>
-
-<div class="signature">Liefs, Caroline</div>
-
-<div class="footer">
-  We kijken ernaar uit je te zien om samen herinneringen te maken! 🎉
-</div>
-
-</body>
-</html>
+    <div id="gu
