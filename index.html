@@ -7,7 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
 <style>
   body {
-    margin: 0; padding: 30px 15px 60px;
+    margin: 0; 
+    padding: 30px 15px 60px;
     background: linear-gradient(135deg, #fef9f3 0%, #fff7e6 100%);
     font-family: 'Montserrat', sans-serif;
     color: #3b2f2f;
@@ -65,7 +66,7 @@
   .highlight {
     color: #c71585;
     font-weight: 700;
-    text-shadow: none; /* Schaduw verwijderd */
+    text-shadow: none; /* schaduwen uit */
   }
   .location {
     font-weight: 700;
@@ -213,4 +214,68 @@
     }
   }
 </style>
-</h
+</head>
+<body>
+
+<header>
+  <h1>Caroline</h1>
+  <div class="gold-underline" aria-hidden="true"></div>
+  <h2>50 Jaar</h2>
+  <div class="subtitle" aria-label="Time to sparkle!">Time to Sparkle!</div>
+</header>
+
+<main>
+  <p>
+    🎈 HELP! Ik word 50! 🥳<br><br>
+    Op <span class="highlight">28 augustus</span> is het zover: ik tik de halve eeuw aan.<br>
+    Geen zorgen — ik voel me nog jong (tenminste tot ik een trap op moet).<br><br>
+    En hoe overleef je zoiets? Met bubbels natuurlijk! 🍾<br><br>
+    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borreltje.<br>
+    Kom langs, proost mee, lach om mijn rimpels en dans alsof het 1999 is (maar dan met rugklachten).<br><br>
+    Ben je erbij? 🎉
+  </p>
+
+  <p class="location" aria-label="Locatie en tijd van het feest">
+    Restaurant De Bosbaan<br />Bosbaanweg 4, Amsterdam
+  </p>
+
+  <p><span class="highlight">Borrel van 15:00 tot 18:00 uur</span></p>
+
+  <p><strong>Cadeautip:</strong> een envelopje</p>
+
+  <form
+    class="rsvp-form"
+    action="https://formspree.io/f/xzzglywk"
+    method="POST"
+  >
+    <label for="name">Jouw naam</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Vul hier je naam in"
+      required
+      autocomplete="name"
+    />
+
+    <label for="persons">Met hoeveel personen kom je?</label>
+    <input
+      type="number"
+      id="persons"
+      name="persons"
+      min="1"
+      max="10"
+      placeholder="Aantal personen"
+      required
+    />
+
+    <button type="submit">Verzenden</button>
+  </form>
+</main>
+
+<div class="footer">
+  We kijken ernaar uit je te zien om samen herinneringen te maken! 🎉
+</div>
+
+</body>
+</html>
