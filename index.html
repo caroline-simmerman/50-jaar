@@ -22,12 +22,14 @@
     border-radius: 20px;
     padding: 30px 40px;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
   }
 
   h1 {
     font-size: 3rem;
     color: #c71585;
     margin-bottom: 10px;
+    text-shadow: 0 1px 3px rgba(255,255,255,0.7);
   }
 
   h2 {
@@ -35,12 +37,14 @@
     margin-bottom: 20px;
     color: #3b2f2f;
     line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.7);
   }
 
   .intro {
     font-size: 1.1rem;
     margin: 20px 0;
     line-height: 1.6;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.7);
   }
 
   .highlight {
@@ -59,6 +63,7 @@
     font-weight: 600;
     font-size: 1.15rem;
     line-height: 1.6;
+    text-shadow: none;
   }
 
   .location-time span {
@@ -81,6 +86,7 @@
     margin-bottom: 30px;
     color: #c71585;
     font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.7);
   }
 
   .rsvp-form {
@@ -93,6 +99,7 @@
   .rsvp-form label {
     text-align: left;
     font-weight: 600;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.7);
   }
 
   .rsvp-form input {
@@ -137,12 +144,28 @@
   .signature {
     margin-top: 40px;
     font-size: 1.2rem;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.7);
   }
 
   @media (max-width: 600px) {
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.3rem; }
-    .intro, .location-time { font-size: 1rem; }
+    body {
+      background-position: center top;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 25px 30px;
+      margin: 20px 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    }
+    h1 {
+      font-size: 2.2rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+    }
+    .intro, .location-time {
+      font-size: 1rem;
+    }
   }
 </style>
 </head>
@@ -151,18 +174,18 @@
 <div class="container">
   <h1>🎈 HELP! Ik word 50! 🥳</h1>
 
-  <h2>Op 28 augustus tik ik de halve eeuw aan.<br />
-  En hoe overleef je dat?<br />
+  <h2>Op 28 augustus tik ik de halve eeuw aan.<br>
+  En hoe overleef je dat?<br>
   Met bubbels natuurlijk!</h2>
 
   <p class="intro">
-    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borrel.<br />
+    Daarom vier ik op <span class="highlight">zaterdag 30 augustus 2025</span> mijn midlife mijlpaal met een borrel.<br>
     Kom langs, proost mee, lach om mijn rimpels en dans alsof het 1999 is (maar dan met rugklachten).
   </p>
 
   <div class="location-time">
-    <span><strong>Restaurant De Bosbaan</strong><br />
-      <a href="https://maps.app.goo.gl/aNefncFcgucjCruS6" target="_blank" rel="noopener noreferrer">Bosbaanweg 4, Amstelveen</a>
+    <span><strong>Restaurant De Bosbaan</strong><br>
+      <a href="https://maps.app.goo.gl/?link=https://goo.gl/maps/8VH3+JJ+Amstelveen" target="_blank" rel="noopener noreferrer">Bosbaanweg 4, Amstelveen</a>
     </span>
     <span><strong>Tijd:</strong> Borrel van 15:00 tot 18:00 uur</span>
   </div>
@@ -184,6 +207,7 @@
   <div class="signature">
     Liefs,<br />Caroline
   </div>
+
 </div>
 
 </body>
