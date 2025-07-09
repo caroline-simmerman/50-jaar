@@ -108,8 +108,7 @@
     letter-spacing: 0.9px;
   }
   form.rsvp-form input[type="text"],
-  form.rsvp-form input[type="number"],
-  form.rsvp-form select {
+  form.rsvp-form input[type="number"] {
     width: 100%;
     padding: 12px 15px;
     margin-bottom: 22px;
@@ -121,8 +120,7 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   form.rsvp-form input[type="text"]:focus,
-  form.rsvp-form input[type="number"]:focus,
-  form.rsvp-form select:focus {
+  form.rsvp-form input[type="number"]:focus {
     outline: none;
     border-color: #c71585;
     box-shadow: 0 0 12px #c71585cc;
@@ -169,11 +167,6 @@
     margin-bottom: 20px;
   }
 
-  /* Verberg standaard het aantal personen veld */
-  #guests-container {
-    display: none;
-  }
-
   @media (max-width: 700px) {
     body {
       padding: 25px 15px 50px;
@@ -203,8 +196,7 @@
       font-size: 1rem;
     }
     form.rsvp-form input[type="text"],
-    form.rsvp-form input[type="number"],
-    form.rsvp-form select {
+    form.rsvp-form input[type="number"] {
       font-size: 0.95rem;
       padding: 10px 12px;
     }
@@ -257,11 +249,21 @@
     <label for="name">Naam:</label>
     <input type="text" id="name" name="Naam" placeholder="Jouw naam" required aria-required="true" autocomplete="name" />
 
-    <label for="attending">Kom je?</label>
-    <select id="attending" name="Kom je?" required aria-required="true" onchange="toggleGuests()">
-      <option value="" disabled selected>Kies een optie</option>
-      <option value="Ja">Ja, ik kom gezellig!</option>
-      <option value="Nee">Nee, helaas niet</option>
-    </select>
+    <label for="guests">Met hoeveel personen kom je?</label>
+    <input type="number" id="guests" name="Aantal personen" placeholder="1" min="1" required aria-required="true" />
 
-    <div id="gu
+    <button type="submit" aria-label="Verstuur RSVP">Verstuur RSVP</button>
+  </form>
+
+  <div class="signature" aria-label="Groet van Caroline">
+    Liefs,<br>Caroline
+  </div>
+
+</main>
+
+<footer class="footer">
+  We kijken ernaar uit je te zien om samen herinneringen te maken! 🎉
+</footer>
+
+</body>
+</html>
